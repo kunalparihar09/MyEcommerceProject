@@ -1,0 +1,15 @@
+<!-- templates/app/payment_success.html -->
+{% extends 'app/base.html' %}
+{% block title %}Payment Successful{% endblock title %}
+
+{% block main-content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2 text-center">
+            <h2>Thank You for Your Purchase!</h2>
+            <p>Your payment was successful, and your order has been placed.</p>
+            <a href="{% url 'home' %}" class="btn btn-success mt-3">Continue Shopping</a>
+        </div>
+    </div>
+</div>
+{% endblock main-content %}
